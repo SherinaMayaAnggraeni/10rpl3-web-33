@@ -1,14 +1,37 @@
 
-body {
-  background-color: rgb(206, 232, 245);
-}
+  <main class="container">
+    <!-- Profil Utama -->
+    <header class="profile">
+      <img src="https://via.placeholder.com/100" alt="Foto Profil" class="profile-img">
+      <h1>Nama Brand / Anda</h1>
+      <p>Deskripsi singkat atau tagline Anda di sini.</p>
+    </header>
 
+    <!-- Daftar Tautan -->
+    <section class="links">
+      <a href="https://wa.me/xxxx" class="link-card" target="_blank">Hubungi via WhatsApp</a>
+      <a href="https://instagram.com" class="link-card" target="_blank">Kunjungi Instagram</a>
+      <a href="https://tokopedia.com" class="link-card" target="_blank">Toko Online</a>
+      <a href="https://website-utama.com" class="link-card" target="_blank">Website Utama</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Nama Brand. All rights reserved.</p>
+    </footer>
+  </main>
+
+</body>
+</html>
+Step 2: Styling CSS (style.css)Buat file bernama style.css di folder yang sama untuk mengatur tata letak, warna, dan responsivitas tampilan:   CSS/* Reset Margin & Font Dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Background Utama dan Layout Tengah */
 body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
@@ -16,4 +39,70 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+/* Kontainer Utama Microsite */
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px; /* Ukuran tampilan ala tampilan HP */
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Bagian Profil */
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.profile h1 {
+  font-size: 1.4rem;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.profile p {
+  font-size: 0.9rem;
+  color: #666666;
+  margin-bottom: 24px;
+}
+
+/* Bagian Tombol / Link Card */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-card {
+  display: block;
+  padding: 14px 20px;
+  background-color: #f4f6f8;
+  color: #333333;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid #e1e4e8;
+}
+
+/* Efek Hover Tombol */
+.link-card:hover {
+  background-color: #764ba2;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.75rem;
+  color: #aaa;
 }
