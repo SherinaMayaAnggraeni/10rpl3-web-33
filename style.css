@@ -3,8 +3,9 @@ body {
   background-color: rgb(206, 232, 245);
 }
 
-<img src="https://via.placeholder.com/120" alt="Foto Profil" class="profile-img">
-        <h2 class="profile-name">Nama Anda</h2>
-        <p class="profile-title">Web Developer</p>
-        <p class="profile-bio">Suka belajar pemrograman web, desain UI/UX, dan teknologi baru.</p>
-        <a href="#" class="profile-btn">Hubungi Saya</a>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
