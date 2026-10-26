@@ -152,11 +152,7 @@ h1 {
 /* Instagram */
 
 .instagram {
-    background:
-        linear-gradient(
-            45deg,
-            #f599e1,
-          
+    background:#f88fef
         );
 }
 
@@ -164,14 +160,14 @@ h1 {
 /* TikTok */
 
 .tiktok {
-    background: #da9cd4;
+    background: #111;
 }
 
 
 /* WhatsApp */
 
 .whatsapp {
-    background: #d691d8;
+    background: #25d366;
 }
 
 
